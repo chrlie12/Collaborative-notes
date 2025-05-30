@@ -1,14 +1,14 @@
-📝 Collaborative Notes App
+##📝 Collaborative Notes App
 A lightweight and responsive Collaborative Notes App built using only HTML, CSS, and JavaScript. This project allows multiple users to write, view, and manage shared notes in real time (basic collaboration simulated using local storage or simple techniques – no backend required).
 
-👥 Team Members
+##👥 Team Members
 Charles
 
 Jalo
 
 Caleb
 
-🚀 Features
+##🚀 Features
 🧠 Create and save notes instantly
 
 ✏️ Edit and delete notes with ease
@@ -21,7 +21,7 @@ Caleb
 
 🔄 Simulated real-time collaboration (via local storage/shared access)
 
-🛠️ Technologies Used
+##🛠️ Technologies Used
 HTML5
 
 CSS3
