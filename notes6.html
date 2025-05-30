@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles' Collaborative Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <div class="main-layout">
+        <nav class="sidebar" id="sidebar">
+            <button class="sidebar-toggle-btn" id="sidebarToggle" title="Toggle sidebar">
+                <i class="bi bi-chevron-left" id="sidebarToggleIcon"></i>
+            </button>
+            <div class="sidebar-title"><i class="bi bi-lightbulb"></i> Notes</div>
+            <div class="sidebar-nav">
+                <button id="sidebar-notes" title="Notes"><i class="bi bi-journal-text"></i> <span>Notes</span></button>
+                <button id="sidebar-reminders" title="Reminders"><i class="bi bi-bell"></i> <span>Reminders</span></button>
+                <button id="sidebar-labels" title="Labels"><i class="bi bi-tag"></i> <span>Labels</span></button>
+                <button id="sidebar-archive" title="Archive"><i class="bi bi-archive"></i> <span>Archive</span></button>
+                <button id="sidebar-trash" title="Trash"><i class="bi bi-trash3"></i> <span>Trash</span></button>
+                <button id="sidebar-settings" title="Settings"><i class="bi bi-gear"></i> <span>Settings</span></button>
+            </div>
+            <div class="sidebar-bottom">
+                <div>Charles' Notes &copy; 2025</div>
+            </div>
+        </nav>
+        <div class="container">
+            <header>
+                <h1><i class="bi bi-journal-richtext"></i> Charles' Notes</h1>
+                <div>
+                    <button id="addNoteBtn" class="btn"><i class="bi bi-plus-lg"></i> New Note</button>
+                    <button id="themeToggle" class="theme-toggle" title="Toggle dark mode"><i class="bi bi-moon"></i></button>
+                </div>
+            </header>
+            <div class="notes-toolbar">
+                <input type="text" id="searchBar" class="search-bar" placeholder="Search notes...">
+            </div>
+            <main>
+                <div id="notesContainer" class="notes-container">
+                    <!-- Notes will be dynamically added here -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <div class="modal-title" id="modalTitle">Add Note</div>
+            <div class="edit-indicator" id="editIndicator" style="display:none;">Editing note...</div>
+            <input type="text" id="tagInput" class="tag-input" placeholder="Tags (comma separated, e.g. work, ideas)">
+            <div id="fileSizeWarning" class="file-size-warning" style="display:none;"></div>
+            <textarea id="noteContent" placeholder="Write your note here..."></textarea>
+            <input type="file" id="noteFile" multiple accept="image/*,.pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx" style="margin-bottom:10px;">
+            <div id="filePreview" style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:10px;"></div>
+            <button id="saveNoteBtn" class="btn save-btn"><i class="bi bi-check-lg"></i> Save</button>
+        </div>
+    </div>
+
+    
+    <script src="notes.js"></script>
+</body>
+</html>
