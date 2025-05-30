@@ -26,9 +26,9 @@ Caleb
 ##🛠️ Technologies Used
 HTML5
 
-CSS3
+CSS
 
-Vanilla JavaScript (ES6+)
+ JavaScript 
 
 No frameworks or libraries – 100% pure front-end implementation.
 
